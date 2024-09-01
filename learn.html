@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn</title>
+    <link rel="icon" type="image/x-icon" href="./Icons/techy.ico" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/learn.css" />
+    <link rel="stylesheet" href="./Css/job.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+  </head>
+
+  <body>
+    <section class="container">
+      <!-- navbar -->
+      <div class="navbar">
+        <img src="./Images/desktop/top-logo.png" alt="top-logo" />
+        <!-- responsive nav -->
+        <input type="checkbox" name="menu" id="checking" />
+        <label class="open" for="checking"
+          ><i class="fi fi-br-menu-burger"></i
+        ></label>
+        <label class="close" for="checking"
+          ><i class="fi fi-rr-rectangle-xmark"></i
+        ></label>
+        <ul>
+          <li class="first-nav"><a href="./index.html">Home</a></li>
+          <li><a href="./jobs.html">Jobs</a></li>
+          <li><a class="active" href="./learn.html">Learn</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./about.html">About us</a></li>
+        </ul>
+        <!-- mobile right icons -->
+        <div class="right-mob-ico">
+          <img src="./Icons/bell-ico.png" alt="notification" />
+          <img src="./Icons/profile-ico.png" alt="user" />
+        </div>
+        <div class="log-btn">
+          <a href="#">Log in</a>
+          <a href="#">Sign in</a>
+        </div>
+      </div>
+      <!-- mobile -secondary nav -->
+      <div class="mob-secondary-nav">
+        <div class="sec-content">
+          <span>Get more benefits our app</span>
+          <a href="https://play.google.com/store/games?hl=en">Get app</a>
+        </div>
+      </div>
+      <!-- overall container -->
+      <div class="show-content-container">
+        <!-- filters-container -->
+        <div class="filters-container">
+          <h3>All filters</h3>
+          <!-- <div class="line"></div> -->
+          <!-- <h3>Work Mode<i class="fi fi-rr-angle-down"></i></h3> -->
+          <div class="line"></div>
+
+          <div class="Working filter-row">
+            <h3>Learn Type<i class="fi fi-rr-angle-down"></i></h3>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="wfh" id="" />
+              <label for="wfh">Mentors</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="remote" id="" />
+              <label for="remote">Courses</label>
+            </div>
+
+            <button id="filter-btn">View more</button>
+          </div>
+          <div class="line"></div>
+          <div class="Working filter-row">
+            <h3>Learn Mode<i class="fi fi-rr-angle-down"></i></h3>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="wfh" id="" />
+              <label for="wfh">Online</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="remote" id="" />
+              <label for="remote">Offline</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="hybrid" id="" />
+              <label for="hybrid">Hybrid</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="pt" id="" />
+              <label for="pt">Recorded</label>
+            </div>
+            <button id="filter-btn">View more</button>
+          </div>
+          <div class="line"></div>
+          <div class="location filter-row">
+            <h3>Location<i class="fi fi-rr-angle-down"></i></h3>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="wfh" id="" />
+              <label for="wfh">Chennai</label>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="remote" id="" />
+              <label for="remote">Madurai</label>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="hybrid" id="" />
+              <label for="hybrid">Coimbatore</label>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="pt" id="" />
+              <label for="pt">Trichy</label>
+            </div>
+
+            <button id="filter-btn">View more</button>
+          </div>
+          <div class="line"></div>
+          <div class="Salary filter-row">
+            <h3>Topics<i class="fi fi-rr-angle-down"></i></h3>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="wfh" id="" />
+              <label for="wfh">Designing</label>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="remote" id="" />
+              <label for="remote">Web development</label>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="hybrid" id="" />
+              <label for="hybrid">Software</label>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="pt" id="" />
+              <label for="pt">Data Engineering </label>
+            </div>
+
+            <button id="filter-btn">View more</button>
+          </div>
+          <div class="line"></div>
+          <div class="Company Type filter-row">
+            <h3>Posted By<i class="fi fi-rr-angle-down"></i></h3>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="wfh" id="" />
+              <label for="wfh">Companies</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" id="filcheck" name="remote" id="" />
+              <label for="remote">Educational Institute</label>
+            </div>
+            <button id="filter-btn">View more</button>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <!--learn card container -->
+        <div class="learn-card-container">
+          <div class="card-top">
+            <p>1-20 of 458 result</p>
+
+            <img class="filter-icon" src="./Icons/filter.png" alt="" />
+          </div>
+          <div class="learn-container">
+            <div class="learn-card learn-card-one">
+              <img src="./Images/desktop/Rectangle 2749-1.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">Artificial Intelligence (AI)</h4>
+                <p class="learn-desc">
+                  you might list the bullet points covered in each module or
+                  lesson, or give a more in-depth breakdown.
+                </p>
+              </div>
+            </div>
+            <div class="learn-card learn-card-two">
+              <img src="./Images/desktop/Rectangle 2749-2.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">Web Development</h4>
+                <p class="learn-desc">
+                  This part should include the seat time of the online course,
+                  any virtual contact hours, and any
+                </p>
+              </div>
+            </div>
+            <div class="learn-card learn-card-three">
+              <img src="./Images/desktop/Rectangle 2749-3.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">Cybersecurity</h4>
+                <p class="learn-desc">
+                  you should clearly state both the level of the course – for
+                  example, beginner, intermediate, or
+                </p>
+              </div>
+            </div>
+            <div class="learn-card learn-card-four">
+              <img src="./Images/desktop/Rectangle 2749-4.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">Software Engineering</h4>
+                <p class="learn-desc">
+                  If you are still in the early stages of designing your course,
+                  then be sure to include engaging.
+                </p>
+              </div>
+            </div>
+            <div class="learn-card learn-card-five">
+              <img src="./Images/desktop/Rectangle 2749-5.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">Cloud Computing</h4>
+                <p class="learn-desc">
+                  The learning objectives should describe in detail the
+                  knowledge, skills, behaviors.
+                </p>
+              </div>
+            </div>
+            <div id="course-one" class="learn-card learn-card-six">
+              <img src="./Images/desktop/Rectangle 2749-6.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">Machine Learning</h4>
+                <p class="learn-desc">
+                  This should be a high-level summary of the goals of your
+                  course and should also state
+                </p>
+              </div>
+            </div>
+            <div class="learn-card learn-card-seven">
+              <img src="./Images/desktop/Rectangle 2749-7.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">Data Analytics</h4>
+                <p class="learn-desc">
+                  Every online course should have a great one to two-sentence
+                  tagline. If you can’t describe
+                </p>
+              </div>
+            </div>
+            <div class="learn-card learn-card-eight">
+              <img src="./Images/desktop/Rectangle 2749-8.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">DevOps</h4>
+                <p class="learn-desc">
+                  A great course description can be the decisive factor of
+                  whether a student signs up.
+                </p>
+              </div>
+            </div>
+            <div class="learn-card learn-card-nine">
+              <img src="./Images/desktop/Rectangle 2749.png" alt="" />
+              <div class="learn-content">
+                <h4 class="learn-head">AR/VR</h4>
+                <p class="learn-desc">
+                  Course summarizing semester 1 knowledge for 3rd graders
+                  according to the program at school.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer container -->
+      <footer class="footer-container">
+        <div class="content-footer">
+          <div class="footer-medias">
+            <a href="/index.html">
+              <img
+                class="footer-logo"
+                src="./Images/desktop/bottom-logo.png"
+                alt=""
+              />
+            </a>
+            <div class="media-icons">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/accounts/login/?hl=en"
+                ><img src="./Icons/Maskgroup.png" alt=""
+              /></a>
+              <a target="_blank" href="https://x.com/i/flow/login"
+                ><img src="./Icons/Maskgroup-1.png" alt=""
+              /></a>
+              <a target="_blank" href="https://linkedin.com/company/login/"
+                ><img src="./Icons/Maskgroup-2.png" alt=""
+              /></a>
+              <a target="_blank" href="https://www.facebook.com/login/"
+                ><img src="./Icons/Maskgroup-3.png" alt=""
+              /></a>
+            </div>
+            <span>Connect with us</span>
+          </div>
+          <div class="footer-pages">
+            <div class="footer-booking">
+              <h3>Booking Support</h3>
+              <i class="fi fi-rr-plus-small"></i>
+              <div class="booking-links">
+                <a href="#">Help center</a>
+                <a href="#">Support</a>
+                <a href="#">Trust & Safety</a>
+                <a href="#">Grievances</a>
+              </div>
+            </div>
+            <div class="footer-about">
+              <h3>About</h3>
+              <i class="fi fi-rr-plus-small"></i>
+              <div class="about-links">
+                <a href="#">About us</a>
+                <a href="#">careers</a>
+                <a href="#">How it works</a>
+                <a href="#">Media</a>
+              </div>
+            </div>
+            <div class="footer-employer">
+              <h3>Become an Employer</h3>
+              <i class="fi fi-rr-plus-small"></i>
+              <div class="employer-links">
+                <a href="#">Post a job</a>
+                <a href="#">Business profile</a>
+                <a href="#">Community</a>
+                <a href="#">Employer's home</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-scan">
+            <div class="scan-container">
+              <div class="email">
+                <div class="left-content">
+                  <h3>Get our app</h3>
+                  <form>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      name=""
+                      id=""
+                    />
+                    <button type="button">Link</button>
+                  </form>
+                  <span>Get a real time updates on our app</span>
+                </div>
+                <div class="right-content">
+                  <div class="scan">
+                    <img src="./Images/desktop/qr-code.png" alt="" />
+                    <span>Scan here</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile">
+                <span>Available on</span>
+                <a target="_blank" href="https://www.apple.com/in/app-store/">
+                  <img src="./Images/desktop/AppstoreOneThemeHd 1.png" alt="" />
+                </a>
+
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/games?hl=en"
+                >
+                  <img src="./Images/desktop/GplayOneThemeHd 1.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rights-footer">
+          <div class="top-line"></div>
+          <p>@copyrights2023 All rights reserved</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

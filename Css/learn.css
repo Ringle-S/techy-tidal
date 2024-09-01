@@ -1,0 +1,111 @@
+@font-face {
+  font-family: jakarta;
+  src: url("../Fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("../Fonts/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: jakarta, roboto sans-serif;
+}
+.learn-container {
+  width: 50%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  grid-template-rows: 260px 260px 260px;
+  gap: 30px;
+  row-gap: 40px;
+}
+.learn-card {
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.211));
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #030303a5;
+  cursor: pointer;
+  padding: 10px;
+}
+.filter-row h3 {
+  display: flex;
+}
+.learn-card:hover {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.155));
+}
+.learn-head {
+  font-size: 24px;
+}
+.learn-desc {
+  font-size: 16px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 2560px) {
+  .learn-container {
+    width: 90%;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 360px 360px 360px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .learn-container {
+    width: 70%;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 260px 260px 260px;
+  }
+  .learn-head {
+    font-size: 18px;
+  }
+  .learn-desc {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .learn-container {
+    width: 60%;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 260px 260px 260px;
+    gap: 20px;
+    row-gap: 20px;
+  }
+  .learn-head {
+    font-size: 16px;
+  }
+  .learn-desc {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .learn-container {
+    width: 90%;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 260px 260px 260px 260px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .learn-container {
+    width: 100%;
+    grid-template-columns: 240px;
+    grid-template-rows: 260px 260px 260px 260px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .learn-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .learn-container {
+    width: 90%;
+  }
+}
