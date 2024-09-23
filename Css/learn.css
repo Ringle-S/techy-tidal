@@ -29,7 +29,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
   color: #030303a5;
   cursor: pointer;
   padding: 10px;
@@ -46,6 +46,10 @@
 .learn-desc {
   font-size: 16px;
   padding-top: 10px;
+}
+.course-new-whole {
+}
+.course-new-container {
 }
 @media screen and (max-width: 2560px) {
   .learn-container {
@@ -68,7 +72,7 @@
     padding-top: 5px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .learn-container {
     width: 60%;
     grid-template-columns: 240px 240px;
@@ -83,29 +87,52 @@
     font-size: 12px;
     padding-top: 10px;
   }
-}
-@media screen and (max-width: 768px) {
-  .learn-container {
-    width: 90%;
-    grid-template-columns: 240px 240px;
-    grid-template-rows: 260px 260px 260px 260px;
+  .course-new-whole {
+    margin-top: 50px !important;
+  }
+  .course-new-container {
+    width: fit-content !important;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
+  .card-top-two {
+    width: 90% !important;
+    padding: 0% 5% !important;
+  }
+  .learn-container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-top-two {
+    width: 100% !important;
+  }
   .learn-container {
     width: 100%;
-    grid-template-columns: 240px;
-    grid-template-rows: 260px 260px 260px 260px;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 260px 260px 260px 260px; */
   }
 }
 @media screen and (max-width: 375px) {
   .learn-container {
     width: 90%;
+  }
+  .card-top-two {
+    width: 90% !important;
+    padding: 0% 5% !important;
   }
 }
 
 @media screen and (max-width: 375px) {
   .learn-container {
     width: 90%;
+  }
+  .card-top-two {
+    width: 90% !important;
+    padding: 0% 5% !important;
   }
 }
