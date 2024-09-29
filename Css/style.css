@@ -144,6 +144,7 @@ a::after {
 .banner-container .banner-img {
   width: 100%;
   height: 720px;
+  margin-top: 70px;
 }
 
 .banner-container .banner-img img {
@@ -1487,6 +1488,11 @@ footer {
     margin-top: 10px;
   }
 }
+@media only screen and (max-width: 1600px) and (min-width: 1440px) {
+  .search-container form {
+    width: 70%;
+  }
+}
 /* media query 1440 */
 /* media query 1440 */
 /* media query 1440 */
@@ -1516,6 +1522,12 @@ footer {
 /* media query 1024 */
 /* media query 1024 */
 @media only screen and (max-width: 1260px) and (min-width: 980px) {
+  .profile-details {
+    width: 480px !important;
+  }
+  .div > h3 span {
+    font-size: 14px !important;
+  }
   /* navigation container */
   .navbar {
     gap: 60px;
@@ -2051,6 +2063,7 @@ footer {
   .banner-container .banner-mob-img {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
   }
 
   .mobile-banner {
@@ -3382,6 +3395,10 @@ footer {
 /* Media query 375px */
 
 @media screen and (max-width: 400px) {
+  .job-card {
+    width: 300px;
+    box-sizing: border-box;
+  }
   .company-card-three {
     /* display: none !important;s */
   }

@@ -107,12 +107,12 @@
     padding: 0 5%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .card-top-two {
-    width: 100% !important;
+    width: 90% !important;
   }
   .learn-container {
-    width: 100%;
+    width: 90%;
     grid-template-columns: 1fr;
     /* grid-template-rows: 260px 260px 260px 260px; */
   }
