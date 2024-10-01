@@ -57,7 +57,7 @@ button {
   gap: 20px;
 }
 
-#filcheck {
+input[type="checkbox"] {
   width: 24px;
   height: 24px;
   background-color: #030303;
@@ -209,7 +209,7 @@ h4 {
 
 .comp-name {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 
   /* color: #030303; */
 }
@@ -232,8 +232,11 @@ h4 {
   gap: 10px;
 }
 
+.row-job > h4 {
+  font-size: 14px !important;
+}
 .row-job-right {
-  margin-left: 70px;
+  margin-left: 40px;
 }
 
 .skill {

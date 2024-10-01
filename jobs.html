@@ -1,814 +1,771 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jobs</title>
-    <link rel="icon" type="image/x-icon" href="./Icons/techy.ico" />
-    <link rel="stylesheet" href="./Css/style.css" />
-    <link rel="stylesheet" href="./Css/job.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
-    />
-  </head>
 
-  <body>
-    <section class="container">
-      <!-- navbar -->
-      <div class="navbar">
-        <img src="./Images/desktop/top-logo.png" alt="top-logo" />
-        <!-- responsive nav -->
-        <input type="checkbox" name="menu" id="checking" />
-        <label class="open" for="checking"
-          ><i class="fi fi-br-menu-burger"></i
-        ></label>
-        <label class="close" for="checking"
-          ><i class="fi fi-rr-rectangle-xmark"></i
-        ></label>
-        <ul>
-          <li class="first-nav"><a href="./index.html">Home</a></li>
-          <li><a class="active" href="./jobs.html">Jobs</a></li>
-          <li><a href="./learn.html">Learn</a></li>
-          <li><a href="./profile.html">Profile</a></li>
-          <li><a href="./about.html">About us</a></li>
-        </ul>
-        <!-- mobile right icons -->
-        <div class="right-mob-ico">
-          <img src="./Icons/bell-ico.png" alt="notification" />
-          <img src="./Icons/profile-ico.png" alt="user" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jobs</title>
+  <link rel="icon" type="image/x-icon" href="./Icons/techy.ico" />
+  <link rel="stylesheet" href="./Css/style.css" />
+  <link rel="stylesheet" href="./Css/job.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+</head>
+
+<body>
+  <section class="container">
+    <!-- navbar -->
+    <div class="navbar">
+      <img src="./Images/desktop/top-logo.png" alt="top-logo" />
+      <!-- responsive nav -->
+      <input type="checkbox" name="menu" id="checking" />
+      <label class="open" for="checking"><i class="fi fi-br-menu-burger"></i></label>
+      <label class="close" for="checking"><i class="fi fi-rr-rectangle-xmark"></i></label>
+      <ul>
+        <li class="first-nav"><a href="./index.html">Home</a></li>
+        <li><a class="active" href="./jobs.html">Jobs</a></li>
+        <li><a href="./learn.html">Learn</a></li>
+        <li><a href="./profile.html">Profile</a></li>
+        <li><a href="./about.html">About us</a></li>
+      </ul>
+      <!-- mobile right icons -->
+      <div class="right-mob-ico">
+        <img src="./Icons/bell-ico.png" alt="notification" />
+        <img src="./Icons/profile-ico.png" alt="user" />
+      </div>
+      <div class="log-btn">
+        <a href="#">Log in</a>
+        <a href="#">Sign in</a>
+      </div>
+    </div>
+    <!-- mobile -secondary nav -->
+    <div class="mob-secondary-nav">
+      <div class="sec-content">
+        <span>Get more benefits our app</span>
+        <a target="_blank" href="https://play.google.com/store/games?hl=en">Get app</a>
+      </div>
+    </div>
+    <!-- overall container -->
+    <div class="show-content-container">
+      <!-- filters-container -->
+      <div class="filters-container">
+        <h3>All filters</h3>
+        <!-- <div class="line"></div> -->
+        <!-- <h3>Work Mode<i class="fi fi-rr-angle-down"></i></h3> -->
+        <div class="line"></div>
+        <div class="range filter-row">
+          <h3>Experience<i class="fi fi-rr-angle-down"></i></h3>
+          <input type="range" name="" />
+          <p class="range-value" contenteditable="true">5 years</p>
         </div>
-        <div class="log-btn">
-          <a href="#">Log in</a>
-          <a href="#">Sign in</a>
+        <div class="line"></div>
+        <div class="Working filter-row">
+          <h3>Work Mode<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh" name="wfh" />
+            <label for="wfh">Work From Home</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="remote" name="remote" />
+            <label for="remote">Remote</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="hybrid" name="hybrid" />
+            <label for="hybrid">Hybrid</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="pt" name="pt" />
+            <label for="pt">Part Time</label>
+          </div>
+          <button id="filter-btn">View more</button>
+        </div>
+        <div class="line"></div>
+        <div class="location filter-row">
+          <h3>Location<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh1" name="wfh" />
+            <label for="wfh1">Chennai</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" id="remote1" name="remote" />
+            <label for="remote1">Madurai</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" id="hybrid1" name="hybrid" />
+            <label for="hybrid1">Coimbatore</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" id="pt1" name="pt" />
+            <label for="pt1">Trichy</label>
+          </div>
+
+          <button id="filter-btn">View more</button>
+        </div>
+        <div class="line"></div>
+        <div class="Salary filter-row">
+          <h3>Salary<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh2" name="wfh" />
+            <label for="wfh2">0 - 3 Lakhs</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" id="remote2" name="remote" />
+            <label for="remote2">4 - 7 Lakhs</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" id="hybrid2" name="hybrid" />
+            <label for="hybrid2">8 - 11 Lakhs</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" id="pt2" name="pt" />
+            <label for="pt2">12 - 15 Lakhs </label>
+          </div>
+
+          <button id="filter-btn">View more</button>
+        </div>
+        <div class="line"></div>
+        <div class="Company Type filter-row">
+          <h3>Company Type<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh3" name="wfh" />
+            <label for="wfh3">Corporate</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="remote3" name="remote" />
+            <label for="remote3">Start ups</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="hybrid3" name="hybrid" />
+            <label for="hybrid3">Foriegn MNC's</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="pt3" name="pt" />
+            <label for="pt3">Indian MNC's</label>
+          </div>
+          <button id="filter-btn">View more</button>
+        </div>
+        <div class="line"></div>
+        <div class="Role filter-row">
+          <h3>Role<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh4" name="wfh" />
+            <label for="wfh4">Designer</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="remote4" name="remote" />
+            <label for="remote4">UX Researcher</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="hybrid4" name="hybrid" />
+            <label for="hybrid4">UI developer</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="pt4" name="pt" />
+            <label for="pt4">Cloud Architect</label>
+          </div>
+          <button id="filter-btn">View more</button>
+        </div>
+        <div class="line"></div>
+        <div class="Education filter-row">
+          <h3>Education<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh5" name="wfh" />
+            <label for="wfh5">Any Post Graduate</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="remote5" name="remote" />
+            <label for="remote5">Any Graduate</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="hybrid5" name="hybrid" />
+            <label for="hybrid5">B.Sc</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="pt5" name="pt" />
+            <label for="pt5">Diploma</label>
+          </div>
+          <button id="filter-btn">View more</button>
+        </div>
+        <div class="line"></div>
+        <div class="Posted filter-row">
+          <h3>Posted By<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh6" name="wfh" />
+            <label for="wfh6">Companies</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="remote6" name="remote" />
+            <label for="remote6">Consultancies</label>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="Companies filter-row">
+          <h3>Top Companies<i class="fi fi-rr-angle-down"></i></h3>
+          <div class="row">
+            <input type="checkbox" id="wfh7" name="wfh" />
+            <label for="wfh7">Wipro</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="remote7" name="remote" />
+            <label for="remote7">TCS</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="hybrid7" name="hybrid" />
+            <label for="hybrid7">Zoho Corp</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="pt7" name="pt" />
+            <label for="pt7">Accenture</label>
+          </div>
+          <button id="filter-btn">View more</button>
+        </div>
+        <div class="line"></div>
+        <div id="working" class="filter-row">
+          <h3>Freshness<i class="fi fi-rr-angle-down"></i></h3>
+          <p id="dropdown">
+            Today <i id="dropdown-arrow" class="fi fi-rr-angle-down"></i>
+          </p>
+        </div>
+        <div class="line"></div>
+      </div>
+
+      <!-- card container -->
+      <div class="job-card-container">
+        <div class="card-top">
+          <p>1-20 of 458 jobs</p>
+          <div class="toggle">
+            <span>Alert Me</span>
+            <div class="outer">
+              <div class="inner"></div>
+            </div>
+          </div>
+          <img class="filter-icon" src="./Icons/filter.png" alt="" />
+        </div>
+        <div class="cards-container">
+          <div class="job-card job-card-one">
+            <div class="row-2">
+              <div class="col">
+                <h3>App Designer</h3>
+                <div class="row">
+                  <p class="comp-name">Tata </p>
+                  <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+                  <span class="review">248 Reviews</span>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fi fi-rr-bookmark"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-job">
+                <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+                <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+              </div>
+              <div class="row-job row-job-right">
+                <h4>
+                  <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
+                </h4>
+                <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                In this role, you will be responsible for developing a imp...
+              </p>
+            </div>
+            <div class="row">
+              <p class="skill">Python</p>
+              <p class="skill">flutter</p>
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Javacript</p>
+            </div>
+            <span class="time">4 weeks ago</span>
+          </div>
+          <div class="job-card job-card-two">
+            <div class="row-2">
+              <div class="col">
+                <h3>Python Developer</h3>
+                <div class="row">
+                  <p class="comp-name">Wipro pvt Services</p>
+                  <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+                  <span class="review">248 Reviews</span>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fi fi-rr-bookmark"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-job">
+                <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+                <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+              </div>
+              <div class="row-job row-job-right">
+                <h4>
+                  <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
+                </h4>
+                <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                In this role, you will be responsible for developing a imp...
+              </p>
+            </div>
+            <div class="row">
+              <p class="skill">Python</p>
+              <p class="skill">flutter</p>
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Javacript</p>
+            </div>
+            <span class="time">4 weeks ago</span>
+          </div>
+          <div class="job-card job-card-three">
+            <div class="row-2">
+              <div class="col">
+                <h3>UI/UX designer</h3>
+                <div class="row">
+                  <p class="comp-name">Pixels</p>
+                  <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+                  <span class="review">248 Reviews</span>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fi fi-rr-bookmark"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-job">
+                <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+                <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+              </div>
+              <div class="row-job row-job-right">
+                <h4>
+                  <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
+                </h4>
+                <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                In this role, you will be responsible for developing a imp...
+              </p>
+            </div>
+            <div class="row">
+              <p class="skill">Python</p>
+              <p class="skill">flutter</p>
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Javacript</p>
+            </div>
+            <span class="time">4 weeks ago</span>
+          </div>
+          <div class="job-card job-card-four">
+            <div class="row-2">
+              <div class="col">
+                <h3>Java Developers</h3>
+                <div class="row">
+                  <p class="comp-name">Accentures</p>
+                  <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+                  <span class="review">248 Reviews</span>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fi fi-rr-bookmark"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-job">
+                <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+                <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+              </div>
+              <div class="row-job row-job-right">
+                <h4>
+                  <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
+                </h4>
+                <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                In this role, you will be responsible for developing a imp...
+              </p>
+            </div>
+            <div class="row">
+              <p class="skill">Python</p>
+              <p class="skill">flutter</p>
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Javacript</p>
+            </div>
+            <span class="time">4 weeks ago</span>
+          </div>
+          <div class="job-card job-card-five">
+            <div class="row-2">
+              <div class="col">
+                <h3>Desktop Developer</h3>
+                <div class="row">
+                  <p class="comp-name">IBM</p>
+                  <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+                  <span class="review">248 Reviews</span>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fi fi-rr-bookmark"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-job">
+                <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+                <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+              </div>
+              <div class="row-job row-job-right">
+                <h4>
+                  <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
+                </h4>
+                <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                In this role, you will be responsible for developing a imp...
+              </p>
+            </div>
+            <div class="row">
+              <p class="skill">Python</p>
+              <p class="skill">flutter</p>
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Javacript</p>
+            </div>
+            <span class="time">4 weeks ago</span>
+          </div>
+          <div class="job-card job-card-six">
+            <div class="row-2">
+              <div class="col">
+                <h3>Web developer</h3>
+                <div class="row">
+                  <p class="comp-name">Zoho corporation</p>
+                  <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+                  <span class="review">248 Reviews</span>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fi fi-rr-bookmark"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-job">
+                <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+                <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+              </div>
+              <div class="row-job row-job-right">
+                <h4>
+                  <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
+                </h4>
+                <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                In this role, you will be responsible for developing a imp...
+              </p>
+            </div>
+            <div class="row">
+              <p class="skill">Python</p>
+              <p class="skill">flutter</p>
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Javacript</p>
+            </div>
+            <span class="time">4 weeks ago</span>
+          </div>
+          <div class="job-card job-card-seven">
+            <div class="row-2">
+              <div class="col">
+                <h3>App Designer</h3>
+                <div class="row">
+                  <p class="comp-name">Tata Consultancy Services</p>
+                  <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+                  <span class="review">248 Reviews</span>
+                </div>
+              </div>
+              <div class="col">
+                <i class="fi fi-rr-bookmark"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-job">
+                <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+                <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+              </div>
+              <div class="row-job row-job-right">
+                <h4>
+                  <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
+                </h4>
+                <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                In this role, you will be responsible for developing a imp...
+              </p>
+            </div>
+            <div class="row">
+              <p class="skill">Python</p>
+              <p class="skill">flutter</p>
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">Javacript</p>
+            </div>
+            <span class="time">4 weeks ago</span>
+          </div>
         </div>
       </div>
-      <!-- mobile -secondary nav -->
-      <div class="mob-secondary-nav">
-        <div class="sec-content">
-          <span>Get more benefits our app</span>
-          <a target="_blank" href="https://play.google.com/store/games?hl=en"
-            >Get app</a
-          >
-        </div>
-      </div>
-      <!-- overall container -->
-      <div class="show-content-container">
-        <!-- filters-container -->
-        <div class="filters-container">
-          <h3>All filters</h3>
-          <!-- <div class="line"></div> -->
-          <!-- <h3>Work Mode<i class="fi fi-rr-angle-down"></i></h3> -->
-          <div class="line"></div>
-          <div class="range filter-row">
-            <h3>Experience<i class="fi fi-rr-angle-down"></i></h3>
-            <input type="range" name="" id="" />
-            <p class="range-value" contenteditable="true">5 years</p>
-          </div>
-          <div class="line"></div>
-          <div class="Working filter-row">
-            <h3>Work Mode<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">Work From Home</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">Remote</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="hybrid" id="" />
-              <label for="hybrid">Hybrid</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="pt" id="" />
-              <label for="pt">Part Time</label>
-            </div>
-            <button id="filter-btn">View more</button>
-          </div>
-          <div class="line"></div>
-          <div class="location filter-row">
-            <h3>Location<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">Chennai</label>
-            </div>
 
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">Madurai</label>
+      <!-- job Details container -->
+      <div class="description-container">
+        <div class="details">
+          <div class="col">
+            <h3>App Designer</h3>
+            <div class="row" style="margin-bottom: 20px">
+              <p style="font-size: 14px" class="comp-name">
+                Tata Consultancy Services
+              </p>
+              <span style="font-size: 12px" id="star"><i class="fi fi-sr-star"></i> 4.5</span>
+              <span style="font-size: 12px" class="review">248 Reviews</span>
             </div>
-
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="hybrid" id="" />
-              <label for="hybrid">Coimbatore</label>
-            </div>
-
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="pt" id="" />
-              <label for="pt">Trichy</label>
-            </div>
-
-            <button id="filter-btn">View more</button>
-          </div>
-          <div class="line"></div>
-          <div class="Salary filter-row">
-            <h3>Salary<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">0 - 3 Lakhs</label>
-            </div>
-
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">4 - 7 Lakhs</label>
-            </div>
-
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="hybrid" id="" />
-              <label for="hybrid">8 - 11 Lakhs</label>
-            </div>
-
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="pt" id="" />
-              <label for="pt">12 - 15 Lakhs </label>
-            </div>
-
-            <button id="filter-btn">View more</button>
-          </div>
-          <div class="line"></div>
-          <div class="Company Type filter-row">
-            <h3>Company Type<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">Corporate</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">Start ups</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="hybrid" id="" />
-              <label for="hybrid">Foriegn MNC's</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="pt" id="" />
-              <label for="pt">Indian MNC's</label>
-            </div>
-            <button id="filter-btn">View more</button>
-          </div>
-          <div class="line"></div>
-          <div class="Role filter-row">
-            <h3>Role<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">Designer</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">UX Researcher</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="hybrid" id="" />
-              <label for="hybrid">UI developer</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="pt" id="" />
-              <label for="pt">Cloud Architect</label>
-            </div>
-            <button id="filter-btn">View more</button>
-          </div>
-          <div class="line"></div>
-          <div class="Education filter-row">
-            <h3>Education<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">Any Post Graduate</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">Any Graduate</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="hybrid" id="" />
-              <label for="hybrid">B.Sc</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="pt" id="" />
-              <label for="pt">Diploma</label>
-            </div>
-            <button id="filter-btn">View more</button>
-          </div>
-          <div class="line"></div>
-          <div class="Posted filter-row">
-            <h3>Posted By<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">Companies</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">Consultancies</label>
+            <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
+            <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
+            <h4><i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs</h4>
+            <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
+            <div class="btn-group">
+              <button type="button" class="apply-btn">Apply</button>
+              <button type="button" class="save-btn">Save</button>
             </div>
           </div>
-          <div class="line"></div>
-          <div class="Companies filter-row">
-            <h3>Top Companies<i class="fi fi-rr-angle-down"></i></h3>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="wfh" id="" />
-              <label for="wfh">Wipro</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="remote" id="" />
-              <label for="remote">TCS</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="hybrid" id="" />
-              <label for="hybrid">Zoho Corp</label>
-            </div>
-            <div class="row">
-              <input type="checkbox" id="filcheck" name="pt" id="" />
-              <label for="pt">Accenture</label>
-            </div>
-            <button id="filter-btn">View more</button>
-          </div>
-          <div class="line"></div>
-          <div id="working" class="filter-row">
-            <h3>Freshness<i class="fi fi-rr-angle-down"></i></h3>
-            <p id="dropdown">
-              Today <i id="dropdown-arrow" class="fi fi-rr-angle-down"></i>
-            </p>
-          </div>
-          <div class="line"></div>
-        </div>
-
-        <!-- card container -->
-        <div class="job-card-container">
-          <div class="card-top">
-            <p>1-20 of 458 jobs</p>
-            <div class="toggle">
-              <span>Alert Me</span>
-              <div class="outer">
-                <div class="inner"></div>
-              </div>
-            </div>
-            <img class="filter-icon" src="./Icons/filter.png" alt="" />
-          </div>
-          <div class="cards-container">
-            <div class="job-card job-card-one">
-              <div class="row-2">
-                <div class="col">
-                  <h3>App Designer</h3>
-                  <div class="row">
-                    <p class="comp-name">Tata Consultancy Services</p>
-                    <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
-                    <span class="review">248 Reviews</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <i class="fi fi-rr-bookmark"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="row-job">
-                  <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-                  <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-                </div>
-                <div class="row-job row-job-right">
-                  <h4>
-                    <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
-                  </h4>
-                  <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-                </div>
-              </div>
-              <div class="row">
-                <p>
-                  In this role, you will be responsible for developing a imp...
-                </p>
-              </div>
-              <div class="row">
-                <p class="skill">Python</p>
-                <p class="skill">flutter</p>
-                <p class="skill">HTML</p>
-                <p class="skill">CSS</p>
-                <p class="skill">Javacript</p>
-              </div>
-              <span class="time">4 weeks ago</span>
-            </div>
-            <div class="job-card job-card-two">
-              <div class="row-2">
-                <div class="col">
-                  <h3>Python Developer</h3>
-                  <div class="row">
-                    <p class="comp-name">Wipro pvt Services</p>
-                    <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
-                    <span class="review">248 Reviews</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <i class="fi fi-rr-bookmark"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="row-job">
-                  <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-                  <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-                </div>
-                <div class="row-job row-job-right">
-                  <h4>
-                    <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
-                  </h4>
-                  <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-                </div>
-              </div>
-              <div class="row">
-                <p>
-                  In this role, you will be responsible for developing a imp...
-                </p>
-              </div>
-              <div class="row">
-                <p class="skill">Python</p>
-                <p class="skill">flutter</p>
-                <p class="skill">HTML</p>
-                <p class="skill">CSS</p>
-                <p class="skill">Javacript</p>
-              </div>
-              <span class="time">4 weeks ago</span>
-            </div>
-            <div class="job-card job-card-three">
-              <div class="row-2">
-                <div class="col">
-                  <h3>UI/UX designer</h3>
-                  <div class="row">
-                    <p class="comp-name">Pixels</p>
-                    <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
-                    <span class="review">248 Reviews</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <i class="fi fi-rr-bookmark"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="row-job">
-                  <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-                  <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-                </div>
-                <div class="row-job row-job-right">
-                  <h4>
-                    <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
-                  </h4>
-                  <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-                </div>
-              </div>
-              <div class="row">
-                <p>
-                  In this role, you will be responsible for developing a imp...
-                </p>
-              </div>
-              <div class="row">
-                <p class="skill">Python</p>
-                <p class="skill">flutter</p>
-                <p class="skill">HTML</p>
-                <p class="skill">CSS</p>
-                <p class="skill">Javacript</p>
-              </div>
-              <span class="time">4 weeks ago</span>
-            </div>
-            <div class="job-card job-card-four">
-              <div class="row-2">
-                <div class="col">
-                  <h3>Java Developers</h3>
-                  <div class="row">
-                    <p class="comp-name">Accentures</p>
-                    <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
-                    <span class="review">248 Reviews</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <i class="fi fi-rr-bookmark"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="row-job">
-                  <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-                  <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-                </div>
-                <div class="row-job row-job-right">
-                  <h4>
-                    <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
-                  </h4>
-                  <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-                </div>
-              </div>
-              <div class="row">
-                <p>
-                  In this role, you will be responsible for developing a imp...
-                </p>
-              </div>
-              <div class="row">
-                <p class="skill">Python</p>
-                <p class="skill">flutter</p>
-                <p class="skill">HTML</p>
-                <p class="skill">CSS</p>
-                <p class="skill">Javacript</p>
-              </div>
-              <span class="time">4 weeks ago</span>
-            </div>
-            <div class="job-card job-card-five">
-              <div class="row-2">
-                <div class="col">
-                  <h3>Desktop Developer</h3>
-                  <div class="row">
-                    <p class="comp-name">IBM</p>
-                    <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
-                    <span class="review">248 Reviews</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <i class="fi fi-rr-bookmark"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="row-job">
-                  <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-                  <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-                </div>
-                <div class="row-job row-job-right">
-                  <h4>
-                    <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
-                  </h4>
-                  <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-                </div>
-              </div>
-              <div class="row">
-                <p>
-                  In this role, you will be responsible for developing a imp...
-                </p>
-              </div>
-              <div class="row">
-                <p class="skill">Python</p>
-                <p class="skill">flutter</p>
-                <p class="skill">HTML</p>
-                <p class="skill">CSS</p>
-                <p class="skill">Javacript</p>
-              </div>
-              <span class="time">4 weeks ago</span>
-            </div>
-            <div class="job-card job-card-six">
-              <div class="row-2">
-                <div class="col">
-                  <h3>Web developer</h3>
-                  <div class="row">
-                    <p class="comp-name">Zoho corporation</p>
-                    <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
-                    <span class="review">248 Reviews</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <i class="fi fi-rr-bookmark"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="row-job">
-                  <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-                  <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-                </div>
-                <div class="row-job row-job-right">
-                  <h4>
-                    <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
-                  </h4>
-                  <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-                </div>
-              </div>
-              <div class="row">
-                <p>
-                  In this role, you will be responsible for developing a imp...
-                </p>
-              </div>
-              <div class="row">
-                <p class="skill">Python</p>
-                <p class="skill">flutter</p>
-                <p class="skill">HTML</p>
-                <p class="skill">CSS</p>
-                <p class="skill">Javacript</p>
-              </div>
-              <span class="time">4 weeks ago</span>
-            </div>
-            <div class="job-card job-card-seven">
-              <div class="row-2">
-                <div class="col">
-                  <h3>App Designer</h3>
-                  <div class="row">
-                    <p class="comp-name">Tata Consultancy Services</p>
-                    <span id="star"><i class="fi fi-sr-star"></i> 4.5</span>
-                    <span class="review">248 Reviews</span>
-                  </div>
-                </div>
-                <div class="col">
-                  <i class="fi fi-rr-bookmark"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="row-job">
-                  <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-                  <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-                </div>
-                <div class="row-job row-job-right">
-                  <h4>
-                    <i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs
-                  </h4>
-                  <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-                </div>
-              </div>
-              <div class="row">
-                <p>
-                  In this role, you will be responsible for developing a imp...
-                </p>
-              </div>
-              <div class="row">
-                <p class="skill">Python</p>
-                <p class="skill">flutter</p>
-                <p class="skill">HTML</p>
-                <p class="skill">CSS</p>
-                <p class="skill">Javacript</p>
-              </div>
-              <span class="time">4 weeks ago</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- job Details container -->
-        <div class="description-container">
-          <div class="details">
-            <div class="col">
-              <h3>App Designer</h3>
-              <div class="row" style="margin-bottom: 20px">
-                <p style="font-size: 14px" class="comp-name">
-                  Tata Consultancy Services
-                </p>
-                <span style="font-size: 12px" id="star"
-                  ><i class="fi fi-sr-star"></i> 4.5</span
-                >
-                <span style="font-size: 12px" class="review">248 Reviews</span>
-              </div>
-              <h4><i class="fi fi-rr-briefcase"></i>&nbsp;Fulltime</h4>
-              <h4><i class="fi fi-rr-marker"></i>&nbsp;Coimbatore</h4>
-              <h4><i class="fi fi-sr-indian-rupee-sign"></i>&nbsp;4-5 lakhs</h4>
-              <h4><i class="fi fi-rr-id-badge"></i>&nbsp;2-4 years</h4>
-              <div class="btn-group">
-                <button type="button" class="apply-btn">Apply</button>
-                <button type="button" class="save-btn">Save</button>
-              </div>
-            </div>
-            <div
-              class="col"
-              style="
+          <div class="col" style="
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: end;
-              "
-            >
-              <img
-                src="./Images/desktop/sky-comp.png"
-                width="100%"
-                height="auto"
-                alt=""
-              />
-              <i class="fi fi-rr-share"></i>
+              ">
+            <img src="./Images/desktop/sky-comp.png" width="100%" height="auto" alt="" />
+            <i class="fi fi-rr-share"></i>
+          </div>
+        </div>
+        <div class="description">
+          <h3>
+            Job ID :
+            <p>A24864455</p>
+          </h3>
+          <h2>About The Job</h2>
+
+          <div class="job">
+            <h3>Description</h3>
+            <p>
+              The is role is part of rekindle returnship program Note : For
+              more details on rekindle program, pls visit -
+              https://www.amazon.jobs/en/landing_pages/rekindle Amazon.in
+              Electronics team is seeking an analytical, creative, and highly
+              motivated Marketing Manager to develop, execute, and evaluate
+              merchandising, marketing, and site experience.
+            </p>
+          </div>
+          <div class="job">
+            <h3>Roles and Responsiblities</h3>
+            <p>
+              Own all key traffic drivers for the category/ line of business,
+              and work as a category advocate with central traffic teams.
+              Possess a deep understanding of all traffic-driving mechanisms
+              (Search, Social media, Push notifications, Affiliates, Email,
+              SEO etc.) and actively engaging in optimization of those
+              channels for the business. Analyze customer cohorts and drive
+              initiatives to improve growth key cohorts. Collaborate with
+              internal teams and brands to drive experiments on brand funded
+              coupons, gamification and influencer marketing.
+            </p>
+          </div>
+          <div class="job">
+            <h3>Basic Qualification</h3>
+            <ul>
+              <li>
+                4+ years of professional non-internship marketing experience
+              </li>
+              <li>Experience using data and metrics to drive improvements</li>
+              <li>
+                Experience with Excel or Tableau (data manipulation, macros,
+                charts and pivot tables)
+              </li>
+              <li>
+                Experience building, executing and scaling cross-functional
+                marketing programs
+              </li>
+              <li>
+                Experience using Microsoft Excel to manipulate and analyze
+                data
+              </li>
+              <li>
+                Experience building, executing and scaling cross-functional
+                programs or marketing campaigns from concept to completion
+              </li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>Preferred Qualification</h3>
+            <ul>
+              <li>
+                Experience using customer research, hard data and metrics to
+                back up assumptions, generate forecasts, and assess the
+                efficacy of marketing programs
+              </li>
+              <li>
+                Experience utilizing systems and tools involving email, web,
+                analytics, and CRM (Marketo, Tableau, Salesforce, etc.) for
+                targeting, segmentation, reporting for demand generation
+              </li>
+              <li>- MBA/PGDM with 4+ experience in marketing.</li>
+            </ul>
+          </div>
+
+          <div class="job job-role">
+            <h4>
+              Role
+              <p>:UI UX Designer</p>
+            </h4>
+            <h4>
+              Industry Type
+              <p>:IT Services & Consulting</p>
+            </h4>
+            <h4>
+              Department
+              <p>:UX, Design & Architecture</p>
+            </h4>
+            <h4>
+              Employment Type
+              <p>:Full Time, Permanent</p>
+            </h4>
+            <h4>
+              Role Category
+              <p>:Designing</p>
+            </h4>
+          </div>
+
+          <div class="job .job-skill">
+            <span>Adobe XD</span>
+            <span>Figma</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Javascript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pages-container">
+      <div class="pages">
+        <span class="first-page">01</span>
+        <div class="line-page"></div>
+        <span class="sec-page">20</span>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+    </div>
+
+    <!-- footer container -->
+    <footer class="footer-container">
+      <div class="content-footer">
+        <div class="footer-medias">
+          <a href="/index.html">
+            <img class="footer-logo" src="./Images/desktop/bottom-logo.png" alt="" />
+          </a>
+          <div class="media-icons">
+            <a target="_blank" href="https://www.instagram.com/accounts/login/?hl=en"><img src="./Icons/Maskgroup.png"
+                alt="" /></a>
+            <a target="_blank" href="https://x.com/i/flow/login"><img src="./Icons/Maskgroup-1.png" alt="" /></a>
+            <a target="_blank" href="https://linkedin.com/company/login/"><img src="./Icons/Maskgroup-2.png"
+                alt="" /></a>
+            <a target="_blank" href="https://www.facebook.com/login/"><img src="./Icons/Maskgroup-3.png" alt="" /></a>
+          </div>
+          <span>Connect with us</span>
+        </div>
+        <div class="footer-pages">
+          <div class="footer-booking">
+            <h3>Booking Support</h3>
+            <i class="fi fi-rr-plus-small"></i>
+            <div class="booking-links">
+              <a href="#">Help center</a>
+              <a href="#">Support</a>
+              <a href="#">Trust & Safety</a>
+              <a href="#">Grievances</a>
             </div>
           </div>
-          <div class="description">
-            <h3>
-              Job ID :
-              <p>A24864455</p>
-            </h3>
-            <h2>About The Job</h2>
+          <div class="footer-about">
+            <h3>About</h3>
+            <i class="fi fi-rr-plus-small"></i>
+            <div class="about-links">
+              <a href="#">About us</a>
+              <a href="#">careers</a>
+              <a href="#">How it works</a>
+              <a href="#">Media</a>
+            </div>
+          </div>
+          <div class="footer-employer">
+            <h3>Become an Employer</h3>
+            <i class="fi fi-rr-plus-small"></i>
+            <div class="employer-links">
+              <a href="#">Post a job</a>
+              <a href="#">Business profile</a>
+              <a href="#">Community</a>
+              <a href="#">Employer's home</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-scan">
+          <div class="scan-container">
+            <div class="email">
+              <div class="left-content">
+                <h3>Get our app</h3>
+                <form>
+                  <input type="email" placeholder="Enter your email" name="" />
+                  <button type="button">Link</button>
+                </form>
+                <span>Get a real time updates on our app</span>
+              </div>
+              <div class="right-content">
+                <div class="scan">
+                  <img src="./Images/desktop/qr-code.png" alt="" />
+                  <span>Scan here</span>
+                </div>
+              </div>
+            </div>
+            <div class="mobile">
+              <span>Available on</span>
+              <a target="_blank" href="https://www.apple.com/in/app-store/">
+                <img src="./Images/desktop/AppstoreOneThemeHd 1.png" alt="" />
+              </a>
 
-            <div class="job">
-              <h3>Description</h3>
-              <p>
-                The is role is part of rekindle returnship program Note : For
-                more details on rekindle program, pls visit -
-                https://www.amazon.jobs/en/landing_pages/rekindle Amazon.in
-                Electronics team is seeking an analytical, creative, and highly
-                motivated Marketing Manager to develop, execute, and evaluate
-                merchandising, marketing, and site experience.
-              </p>
-            </div>
-            <div class="job">
-              <h3>Roles and Responsiblities</h3>
-              <p>
-                Own all key traffic drivers for the category/ line of business,
-                and work as a category advocate with central traffic teams.
-                Possess a deep understanding of all traffic-driving mechanisms
-                (Search, Social media, Push notifications, Affiliates, Email,
-                SEO etc.) and actively engaging in optimization of those
-                channels for the business. Analyze customer cohorts and drive
-                initiatives to improve growth key cohorts. Collaborate with
-                internal teams and brands to drive experiments on brand funded
-                coupons, gamification and influencer marketing.
-              </p>
-            </div>
-            <div class="job">
-              <h3>Basic Qualification</h3>
-              <ul>
-                <li>
-                  4+ years of professional non-internship marketing experience
-                </li>
-                <li>Experience using data and metrics to drive improvements</li>
-                <li>
-                  Experience with Excel or Tableau (data manipulation, macros,
-                  charts and pivot tables)
-                </li>
-                <li>
-                  Experience building, executing and scaling cross-functional
-                  marketing programs
-                </li>
-                <li>
-                  Experience using Microsoft Excel to manipulate and analyze
-                  data
-                </li>
-                <li>
-                  Experience building, executing and scaling cross-functional
-                  programs or marketing campaigns from concept to completion
-                </li>
-              </ul>
-            </div>
-            <div class="job">
-              <h3>Preferred Qualification</h3>
-              <ul>
-                <li>
-                  Experience using customer research, hard data and metrics to
-                  back up assumptions, generate forecasts, and assess the
-                  efficacy of marketing programs
-                </li>
-                <li>
-                  Experience utilizing systems and tools involving email, web,
-                  analytics, and CRM (Marketo, Tableau, Salesforce, etc.) for
-                  targeting, segmentation, reporting for demand generation
-                </li>
-                <li>- MBA/PGDM with 4+ experience in marketing.</li>
-              </ul>
-            </div>
-
-            <div class="job job-role">
-              <h4>
-                Role
-                <p>:UI UX Designer</p>
-              </h4>
-              <h4>
-                Industry Type
-                <p>:IT Services & Consulting</p>
-              </h4>
-              <h4>
-                Department
-                <p>:UX, Design & Architecture</p>
-              </h4>
-              <h4>
-                Employment Type
-                <p>:Full Time, Permanent</p>
-              </h4>
-              <h4>
-                Role Category
-                <p>:Designing</p>
-              </h4>
-            </div>
-
-            <div class="job .job-skill">
-              <span>Adobe XD</span>
-              <span>Figma</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Javascript</span>
+              <a target="_blank" href="https://play.google.com/store/games?hl=en">
+                <img src="./Images/desktop/GplayOneThemeHd 1.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="pages-container">
-        <div class="pages">
-          <span class="first-page">01</span>
-          <div class="line-page"></div>
-          <span class="sec-page">20</span>
-          <button type="button" class="next-btn">Next</button>
-        </div>
+      <div class="rights-footer">
+        <div class="top-line"></div>
+        <p>@copyrights2023 All rights reserved</p>
       </div>
+    </footer>
+  </section>
+</body>
 
-      <!-- footer container -->
-      <footer class="footer-container">
-        <div class="content-footer">
-          <div class="footer-medias">
-            <a href="/index.html">
-              <img
-                class="footer-logo"
-                src="./Images/desktop/bottom-logo.png"
-                alt=""
-              />
-            </a>
-            <div class="media-icons">
-              <a
-                target="_blank"
-                href="https://www.instagram.com/accounts/login/?hl=en"
-                ><img src="./Icons/Maskgroup.png" alt=""
-              /></a>
-              <a target="_blank" href="https://x.com/i/flow/login"
-                ><img src="./Icons/Maskgroup-1.png" alt=""
-              /></a>
-              <a target="_blank" href="https://linkedin.com/company/login/"
-                ><img src="./Icons/Maskgroup-2.png" alt=""
-              /></a>
-              <a target="_blank" href="https://www.facebook.com/login/"
-                ><img src="./Icons/Maskgroup-3.png" alt=""
-              /></a>
-            </div>
-            <span>Connect with us</span>
-          </div>
-          <div class="footer-pages">
-            <div class="footer-booking">
-              <h3>Booking Support</h3>
-              <i class="fi fi-rr-plus-small"></i>
-              <div class="booking-links">
-                <a href="#">Help center</a>
-                <a href="#">Support</a>
-                <a href="#">Trust & Safety</a>
-                <a href="#">Grievances</a>
-              </div>
-            </div>
-            <div class="footer-about">
-              <h3>About</h3>
-              <i class="fi fi-rr-plus-small"></i>
-              <div class="about-links">
-                <a href="#">About us</a>
-                <a href="#">careers</a>
-                <a href="#">How it works</a>
-                <a href="#">Media</a>
-              </div>
-            </div>
-            <div class="footer-employer">
-              <h3>Become an Employer</h3>
-              <i class="fi fi-rr-plus-small"></i>
-              <div class="employer-links">
-                <a href="#">Post a job</a>
-                <a href="#">Business profile</a>
-                <a href="#">Community</a>
-                <a href="#">Employer's home</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-scan">
-            <div class="scan-container">
-              <div class="email">
-                <div class="left-content">
-                  <h3>Get our app</h3>
-                  <form>
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      name=""
-                      id=""
-                    />
-                    <button type="button">Link</button>
-                  </form>
-                  <span>Get a real time updates on our app</span>
-                </div>
-                <div class="right-content">
-                  <div class="scan">
-                    <img src="./Images/desktop/qr-code.png" alt="" />
-                    <span>Scan here</span>
-                  </div>
-                </div>
-              </div>
-              <div class="mobile">
-                <span>Available on</span>
-                <a target="_blank" href="https://www.apple.com/in/app-store/">
-                  <img src="./Images/desktop/AppstoreOneThemeHd 1.png" alt="" />
-                </a>
-
-                <a
-                  target="_blank"
-                  href="https://play.google.com/store/games?hl=en"
-                >
-                  <img src="./Images/desktop/GplayOneThemeHd 1.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rights-footer">
-          <div class="top-line"></div>
-          <p>@copyrights2023 All rights reserved</p>
-        </div>
-      </footer>
-    </section>
-  </body>
 </html>
